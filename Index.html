@@ -2,15 +2,16 @@
 <html lang="en-GB">
   <head>
     <meta charset="utf-8" />
-    <title>Hypermiling</title>
-    <link rel="stylesheet" href="Styles.css" />
-    
+    <title>Hypermiling</title>                           <!--Page title, invisible on browser page-->
+    <link rel="stylesheet" href="Styles.css" />                 <!--Reference to external CSS file-->
   </head>
-  </head>
-  <body>
-   <h1>Hypermiling</h1>
 
-   <a href="https://www.chevybolt.org/threads/range-hypermiling-modifications.13466/">
+  <body>
+   <h1>Hypermiling</h1>                                    <!--Page title, visible on browser page-->
+
+   <!--Image with a hyperlink to its original source-->
+   <a href="https://www.chevybolt.org/threads/range-hypermiling-modifications.13466/" 
+    target="_blank">
     <img src="Image.jpg"; title="Toyota Prius with a boat tail body modification
                     *click to visit source*" />                                                  </a>  
    
@@ -27,6 +28,9 @@
      <p>On the other hand, several hypermiling enthusiasts merely partake in the activity for 
         recreational purposes, gamifying the practice into a competition for achieving the 
         highest mileage.                                                                         </p>
+     <p>This page focusses on petrol and diesel cars, shying away from the battery-electric type,
+        although most of the points discussed on this page relating to drag, weight and rolling
+        resistance applies to them too.                                                          </p>
       </div>      
     
    <div class="Section">
@@ -36,7 +40,7 @@
         being lost internally. However the torque should still be moderated to avoid excessive 
         pressures that could damage the engine. Furthermore, if the engine speed is too low, the 
         thermal losses will be greater as the gases would have insufficient time to expand before 
-        the heat escapes.                                                                        </p>
+        the heat escapes through the chamber's metal walls.                                                                        </p>
      <p>It is best practice to lubricate the internal combustion engine using the grades of oil 
         recommended by the manufacturer to minimise frictional losses between the reciprocating 
         pistons and shafts. Whilst thicker oils offer a more protective lubrication layer with a 
@@ -46,6 +50,9 @@
      <p>To mitigate the development of internal rust and particulate matter, the engine can be 
         occasionally cleaned with ethanol-rich fuel or even pure ethanol. The main drawback is 
         that prolonged use of alcohol may accelerate the corrosion of the engine.                </p>
+     <p>It is more economical to use cars for long distance journeys, as this practice allows
+        enough time for the engine to gradually heat up to its optimal working temperature range.
+        Likewise, use of cars for short trips should be avoided where practicable.               </p>
    </div>
 
    <div class="Section">
@@ -66,8 +73,9 @@
      <p>An adequate tyre pressure should be maintained at all times to minimise the rolling 
         resistance between the wheels and the road. Larger diameter wheels tend to have lower 
         rolling resistance, along with offering a smoother ride, useful especially on roads 
-        with potholes. The main drawback is that increasing the wheel diameter will increase 
-        the car’s centre of mass and increase drag (at the wheels).</p>
+        with potholes. The drawbacks are that increasing the wheel diameter will increase 
+        the car’s mass, raise its centre of gravity, reduce its manouverability and 
+        increase drag (at the wheels).                                                           </p>
      <p>Low profile tyres offer lower rolling resistance, however offer less comfort and less 
         shock-absorbency for the wheels.                                                         </p>
    </div>
@@ -94,13 +102,14 @@
    </div>
 
    <div class="Today"><p>Today's date is <strong id="today"></strong></p></div>
+   <!--The blank space within the <strong> tags above will be filled in with today's date 
+       generated in the JavaScript below-->
 
    <script>
     const date = new Date();
     let day = date.getDate(); 
     let month = date.toLocaleString('default', { month: 'long' }); let year = date.getFullYear();
-    document.getElementById("today").innerHTML = `${day} ${month} ${year}`;
+    document.getElementById("today").innerHTML = `${day} ${month} ${year}`; // Joining the strings
    </script>
-
   </body>
 </html>
