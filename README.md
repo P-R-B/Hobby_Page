@@ -18,8 +18,10 @@ Methodology
 4. To facilitate the CSS application, I revisited my HTML script to divide the relevant sections of text into classes. I also added an image to the page and
    credited the source by linking the image directly to it through an <href> attribute.
 5. To add a present date functionality, I had to type the JavaScript into the same file as the HTML, as I would not be able to concatenate the date with the        text in the HTML paragraph otherwise. InnerHTML was used for this, and the text was resized by additional code in the CSS file.
+6. I extended the page with an additional section, the only one to contain an embedded image. The main struggle was with getting the paragraph text and image      displayed side-by-side, however after considerable trial and error, I settled for the float option to achiever this.
+7. I tweaked the presentation by introducing padding so that the bodies of text were well-contained within their respective boxes, rather than extending to the    boundaries.
 
 
 Operation
 
-The page is intended for reading only (much like a newspaper article) and lacks interactivity and personalisation.
+The page is intended for reading only (much like a newspaper article) and lacks personalisation.
